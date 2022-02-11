@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/segundo_fundo"
+    tools:context=".ui.numbers.NumbersFragment">
+
+    <ImageButton
+        android:id="@+id/ib_image1"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_margin="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/um"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ib_image2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ib_image2"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_margin="16dp"
+        android:background="@color/background_animals"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dois"
+        app:layout_constraintLeft_toRightOf="@id/ib_image1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ib_image3"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_margin="16dp"
+        android:background="@color/background_animals"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tres"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ib_image4"
+        app:layout_constraintTop_toBottomOf="@id/ib_image1" />
+
+    <ImageButton
+        android:id="@+id/ib_image4"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_margin="16dp"
+        android:background="@color/background_animals"
+        android:scaleType="centerCrop"
+        android:src="@drawable/quatro"
+        app:layout_constraintLeft_toRightOf="@id/ib_image3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ib_image2" />
+
+    <ImageButton
+        android:id="@+id/ib_image5"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_margin="16dp"
+        android:background="@color/background_animals"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cinco"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ib_image6"
+        app:layout_constraintTop_toBottomOf="@id/ib_image3" />
+
+    <ImageButton
+        android:id="@+id/ib_image6"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_margin="32dp"
+        android:background="@color/background_animals"
+        android:scaleType="centerCrop"
+        android:src="@drawable/seis"
+        app:layout_constraintLeft_toRightOf="@id/ib_image5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ib_image4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/direitos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
